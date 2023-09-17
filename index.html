@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <!--  -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <h3>Currency Converter</h3>
+
+        <div class="inp-container">
+            <label for="amount">Enter Amount</label>
+            <input type="number" name="" id="amount" value="1">
+        </div>
+
+        <div class="converts-container">
+
+            <div class="from">
+                <span>From</span>
+                <div class="wrapper">
+                    <figure>
+                        <img class="cur-pay" src="https://cdn-icons-png.flaticon.com/128/5169/5169407.png" alt="">
+                    </figure>
+                    <select name="" id="fromSelect" class="currencies-select">
+                        <option value="null"></option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="change-icon">
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            </div>
+
+            <div class="to">
+                <span>To</span>
+                <div class="wrapper">
+                    <figure>
+                        <img class="cur-pay" src="https://cdn-icons-png.flaticon.com/128/5169/5169407.png" alt="">
+                    </figure>
+                    <select name="" id="toSelect" class="currencies-select">
+                        <option value="null"></option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="converted-value"></div>
+
+        <button class="get-exchange">Get Exchange Rate</button>
+
+    </div>
+
+
+    <script type="module" src="assets/js/countryLists.js"></script>
+    <script src="assets/js/main.js" type="module"></script>
+</body>
+
+</html>
